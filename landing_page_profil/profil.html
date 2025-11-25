@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Profil Saya</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #0d1b2a;
+            color: white;
+        }
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-end; /* 👉 Semua menu ke kanan */
+            background-color: #fb8500;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* MENU UL */
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        /* LINK */
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color:  #0d1b2a
+        }
+
+
+        header {
+            background: #fb8500;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .skills, .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background-color: #0d1b2a;
+        }
+        .skill-item, .portfolio-item {
+            border: 1px solid #ffffff;
+            padding: 20px;
+            flex: 1 1 200px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #fb8500;
+        }
+        footer {
+            background:  #fb8500;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #contact {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        #contact a i {
+        font-size: 32px;            /* ukuran ikon */
+        color: #ffffff;                /* warna ikon */
+        transition: transform 0.2s; /* animasi hover */
+        }
+
+        #contact a i:hover {
+        transform: scale(1.2);      /* efek zoom saat hover */
+        color: #fb8500;             /* ganti warna saat hover */
+}
+        .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0d1b2a;
+    padding: 15px;
+    border-color: #fb8500;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.skill-item img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#portfolio">Project</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
+
+    <!-- Header / Hero Section -->
+    <header>
+        <img src="https://st4.depositphotos.com/5934840/27204/v/450/depositphotos_272047156-stock-illustration-businessman-avatar-cartoon-character-profile.jpg" alt="Foto Profil">
+        <h1>Rangga Rasendriya</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <!-- About / Tentang Saya -->
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>
+            Halo! Saya Rangga Rasendriya, seorang web developer Tangerang Selatan. 
+            Saya memiliki pengalaman membuat website, aplikasi web.
+        </p>
+    </section>
+
+    <!-- Skills / Keahlian -->
+    <section id="skills">
+        <h2>Keahlian</h2>
+        <div class="skills">
+            <div class="skill-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="HTML">
+                <b>HTML</b>
+            </div>
+        
+            <div class="skill-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Logo">
+                <b>CSS</b>
+            </div>
+        
+            <div class="skill-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+                <b>JavaScript</b>
+            </div>
+        
+            <div class="skill-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React Logo">
+                <b>React</b>
+            </div>
+        </div>
+
+                
+
+    </section>
+
+    <!-- Portfolio / Project -->
+    <section id="portfolio">
+        <h2>Project</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <h3>Project 1</h3>
+                <p>Deskripsi singkat project 1</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 2</h3>
+                <p>Deskripsi singkat project 2</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 3</h3>
+                <p>Deskripsi singkat project 3</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 4</h3>
+                <p>Deskripsi singkat project 3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Kontak -->
+    <section id="contact">
+        <a href="#" target="_blank"><i class="bi bi-envelope-at"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-telephone"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Rangga. All rights reserved.<br>
+        Universitas Pamulang, Tangerang Selatan, Jawa Barat
+    </footer>
+
+</body>
+</html>
